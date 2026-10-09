@@ -190,6 +190,9 @@ html[lang="ar"] .announcement-close{right:auto;left:5px}
 .hero-art{min-height:39vw}
 @media(max-width:680px){.hero-art{height:auto;min-height:0;flex-shrink:0;aspect-ratio:4/3}}
 .hero-image[data-hero-variant="model"]{object-position:50% 0!important}
+/* Mirror the portrait and its backdrop in Arabic; the text-side seam stays independent. */
+html[lang="ar"] .hero-image[data-hero-variant="model"]{scale:-1 1}
+html[lang="ar"] .hero-art:has([data-hero-variant="model"]):before{transform:scaleX(-1)}
 
 /* Keep desktop proportions balanced, including zoomed-out and ultrawide views. */
 .ritual,.contact-section,.site-footer{max-width:1920px;margin-inline:auto}
@@ -197,7 +200,7 @@ html[lang="ar"] .announcement-close{right:auto;left:5px}
  .hero{min-height:540px;max-width:1920px;margin-inline:auto}
  .hero-art{min-height:0}
  /* Keep the portrait proportional on wide screens, with a soft backdrop at its sides. */
- .hero-art:has([data-hero-variant="model"]):before{content:"";position:absolute;inset:-35px;background:url("hero-model.webp") center 20%/cover no-repeat;filter:blur(28px);pointer-events:none}
+ .hero-art:has([data-hero-variant="model"]):before{content:"";position:absolute;inset:-35px;background:url("hero-curly-rose-v3.webp") center 20%/cover no-repeat;filter:blur(28px);pointer-events:none}
  .hero .hero-image[data-hero-variant="model"]{width:auto;height:160%;max-width:100%;left:50%;right:auto;translate:-50% 0;object-fit:contain;mask-image:linear-gradient(to right,transparent,#000 15%,#000 85%,transparent)}
  .hero-copy,html[lang="en"] .hero-copy{padding-top:35px;padding-bottom:35px;padding-inline-start:max(50px,calc((min(100vw,1920px) - 1280px)/2));padding-inline-end:30px;justify-content:center}
  .hero h1,html[lang="en"] .hero h1{font-size:54px;margin-top:12px}
