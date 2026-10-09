@@ -216,6 +216,9 @@ html[lang="ar"] .hero-art:has([data-hero-variant="model"]):before{transform:scal
 }
 .delivery-choice textarea,.delivery-choice input[type="tel"]{display:block;width:100%;box-sizing:border-box;margin-top:0;padding:10px 12px;border:1px solid #e4cbd7;border-radius:7px;background:#fff;color:#40323b;font:15px/1.7 'Tajawal',sans-serif}
 .delivery-choice textarea{min-height:84px;resize:vertical}
+.phone-field{display:flex;align-items:stretch;direction:ltr;border:1px solid #e4cbd7;border-radius:7px;background:#fff;overflow:hidden}
+.phone-field .phone-code{display:flex;align-items:center;flex:0 0 auto;padding:0 12px;background:#f8f1f4;color:#6d4458;border-inline-end:1px solid #e4cbd7;font:15px/1 'Manrope',sans-serif}
+.delivery-choice .phone-field input[type="tel"]{width:auto;flex:1;min-width:0;border:0;border-radius:0;background:transparent}
 .delivery-choice label[for="delivery-address"],.delivery-choice label[for="contact-phone"]{margin-top:14px}
 #address-error,#phone-error{color:#ab285f;font-size:13px;margin-top:5px}
 .checkout-detail{display:grid;gap:4px}
