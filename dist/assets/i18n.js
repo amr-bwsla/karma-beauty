@@ -43,7 +43,8 @@
   if(current!==next)node.nodeValue=next;
  }
  function applyElement(el){
-  if(el.closest(ignored))return;
+  const blocked=el.closest(ignored);
+  if(blocked && (blocked!==el || !el.matches('textarea')))return;
   let records=attributes.get(el);if(!records){records={};attributes.set(el,records);}
   for(const attr of attrs){
    if(!el.hasAttribute(attr))continue;
@@ -57,8 +58,10 @@
  function localize(root){
   if(root.nodeType===Node.TEXT_NODE){applyText(root);return;}
   if(root.nodeType!==Node.ELEMENT_NODE)return;
-  if(root.matches(ignored))return;
+  const selfIgnored=root.matches(ignored);
+  if(selfIgnored && !root.matches('textarea'))return;
   applyElement(root);
+  if(selfIgnored)return;
   const walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT|NodeFilter.SHOW_ELEMENT);
   while(walker.nextNode()){const node=walker.currentNode;if(node.nodeType===Node.TEXT_NODE)applyText(node);else applyElement(node);}
  }
