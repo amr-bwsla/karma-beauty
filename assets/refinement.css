@@ -115,6 +115,8 @@ body [data-contact][hidden]{display:none!important}.contact-grid:has([data-conta
 #load-more{background:#b82768;border:1px solid #b82768;color:#fff;font-weight:700;min-height:46px;min-width:185px;padding:12px 25px;box-shadow:0 4px 12px #a32b611a}
 #load-more:hover{background:#9e2058;border-color:#9e2058;color:#fff}
 #load-more:focus-visible{outline:3px solid #88204d;outline-offset:4px}
+html[lang="ar"] .site-header{direction:rtl}
+html[lang="en"] .site-header{direction:ltr}
 html[lang="en"]{--arabic:'Manrope',Arial,sans-serif}
 html[lang="en"] body,html[lang="en"] dialog,html[lang="en"] .ritual-copy,html[lang="en"] .search-trigger{direction:ltr}
 html[lang="en"] .hero h1{font-size:62px;line-height:1.16;letter-spacing:-2px}
