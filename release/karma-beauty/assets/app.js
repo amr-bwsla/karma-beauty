@@ -119,6 +119,15 @@
  const contact=cfg.contact||{};
  if(live){$$('[data-demo-perk]').forEach(el=>el.hidden=true);const group=$('.announcement-group');if(group){group.innerHTML='<span>اكتشفي اختيارات كارما للعناية والمكياج</span><span>تواصلي معنا للعروض المتاحة</span>';$$('.announcement-group').slice(1).forEach(el=>el.innerHTML=group.innerHTML);}}
  const hero=$('.hero');if(hero&&'IntersectionObserver' in window)new IntersectionObserver(([entry])=>document.body.classList.toggle('hero-in-view',entry.isIntersecting),{threshold:.15}).observe(hero);
+ const heroArt=$('.hero-art');
+ if(heroArt){
+  let touchPointer=null;
+  const resetHeroTouch=()=>{touchPointer=null;heroArt.classList.remove('is-touching');};
+  heroArt.addEventListener('pointerdown',e=>{if(e.pointerType==='mouse'||!e.isPrimary)return;touchPointer=e.pointerId;heroArt.classList.add('is-touching');},{passive:true});
+  for(const event of ['pointerup','pointercancel'])window.addEventListener(event,e=>{if(e.pointerId===touchPointer)resetHeroTouch();},{passive:true});
+  window.addEventListener('blur',resetHeroTouch);
+  document.addEventListener('visibilitychange',()=>{if(document.hidden)resetHeroTouch();});
+ }
  const footer=$('.site-footer');if(footer&&'IntersectionObserver' in window)new IntersectionObserver(([entry])=>document.body.classList.toggle('footer-in-view',entry.isIntersecting),{threshold:.05}).observe(footer);
  $$('[data-contact="email"]').forEach(el=>el.hidden=!contact.email||String(contact.email).endsWith('.example'));
  $$('[data-contact-value]').forEach(el=>{if(contact[el.dataset.contactValue])el.textContent=contact[el.dataset.contactValue];});
