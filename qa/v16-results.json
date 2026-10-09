@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "checks": [
+    "8 curated products then 16 then 20",
+    "decorative ribbon removed",
+    "ritual inscription embedded in image",
+    "ticker coverage full cycle",
+    "live image search and empty query recovery",
+    "Cairo 50, Giza 120",
+    "governorate required and persisted",
+    "individual branded payment choices with explicit COD fallback",
+    "no order or payment sent",
+    "matching round contact buttons",
+    "responsive dialogs at 320/390/595/680/734/1440"
+  ],
+  "errors": [],
+  "writes": []
+}

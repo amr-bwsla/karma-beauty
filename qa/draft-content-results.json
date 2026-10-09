@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "mobileWelcomeHeight": 81.59375,
+  "checks": [
+    "20 product ingredient lists and usage steps",
+    "draft labeling",
+    "mobile signup action preserved",
+    "three structured policies",
+    "governorate delivery estimates and unchanged shipping prices",
+    "320–1440 responsive layout"
+  ],
+  "errors": []
+}

@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "checks": [
+    "guest coupon denied",
+    "local demo signup",
+    "email not stored",
+    "10% arithmetic",
+    "invalid code rejected",
+    "coupon normalized and not stacked",
+    "checkout matches cart",
+    "reload persistence",
+    "fixed governorate shipping after discount",
+    "remove coupon",
+    "logout clears membership",
+    "sample account",
+    "320px signup",
+    "empty cart clears gift",
+    "no external calls or writes",
+    "mock WooCommerce native account routing and demo perks hidden"
+  ],
+  "errors": []
+}

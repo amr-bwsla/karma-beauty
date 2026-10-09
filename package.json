@@ -1,0 +1,16 @@
+{
+  "name": "karma-beauty",
+  "version": "1.8.2",
+  "private": true,
+  "description": "Karma Beauty storefront preview and installable WooCommerce theme",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs",
+    "check": "node --check assets/app.js && node --check assets/boot.js && node --check assets/i18n.js && node --check scripts/build.mjs && node --check scripts/serve.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.0",
+    "php-parser": "^3.7.0",
+    "sharp": "^0.35.5"
+  }
+}

@@ -1,0 +1,32 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+const root=process.cwd();
+const read=p=>fs.readFile(path.join(root,p),'utf8');
+const products=JSON.parse(await read('assets/products.json'));
+const contact=JSON.parse(await read('assets/contact.json'));
+const storeContent=JSON.parse(await read('assets/store-content.json'));
+const translations=JSON.parse(await read('assets/translations/en.json'));
+const boot=await read('assets/boot.js');
+const fragments=await Promise.all(['site-header','home','site-footer'].map(p=>read(`theme/template-parts/${p}.php`)));
+await fs.mkdir('dist',{recursive:true});
+await fs.cp('assets','dist/assets',{recursive:true,filter:p=>!p.endsWith('-source.png')&&!p.endsWith('image-prompts.md')&&!p.includes('product-image-manifest-')&&!p.endsWith('product-image-prompts.md')});
+const previewFragments=[...fragments];
+if(storeContent.announcementEnabled===false)previewFragments[0]=previewFragments[0].replace(/<div class="announcement"[\s\S]*?(?=<header)/,'');
+const html=`<!doctype html><html lang="en" dir="ltr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Karma Beauty — your little space for care and beauty. Discover skincare, makeup, haircare and bodycare."><meta name="theme-color" content="#ce3279"><meta name="robots" content="noindex,nofollow"><title>Karma Beauty — Naturally you</title><style>.karma-locale-pending body{visibility:hidden}.karma-announcement-dismissed .announcement{display:none!important}</style><script>${boot}</script><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="assets/style.css"><link rel="stylesheet" href="assets/refinement.css"><link rel="preload" as="image" href="assets/hero-model.webp"></head><body>${previewFragments.join('\n').replaceAll('{{ASSET}}','assets')}<script>window.KARMA_CONFIG=${JSON.stringify({mode:'demo',assets:'assets',products,contact,storeContent,translations}).replaceAll('<','\\u003c')};</script><script src="assets/i18n.js" defer></script><script src="assets/app.js" defer></script></body></html>`;
+await fs.writeFile('dist/index.html',html);
+await fs.mkdir('release/karma-beauty',{recursive:true});
+await fs.cp('theme','release/karma-beauty',{recursive:true});
+await fs.cp('assets','release/karma-beauty/assets',{recursive:true,filter:p=>!p.endsWith('-source.png')&&!p.endsWith('image-prompts.md')&&!p.includes('product-image-manifest-')&&!p.endsWith('product-image-prompts.md')});
+for(let i=0;i<fragments.length;i++){
+ let content=fragments[i].replaceAll('{{ASSET}}',"<?php echo esc_url(get_template_directory_uri()); ?>/assets");
+ const custom={ 'جمالك.':['karma_title_one','جمالك.'], 'على طبيعتك.':['karma_title_two','على طبيعتك.'], 'عروض كارما':['karma_announcement','عروض كارما'], 'تفاصيل صغيرة، إحساس مختلف.<br>اكتشفي عالمًا من العناية والألوان، يشبهك إنتِ.':['karma_intro','تفاصيل صغيرة، إحساس مختلف. اكتشفي عالمًا من العناية والألوان، يشبهك إنتِ.']};
+ for(const [text,[key,fallback]] of Object.entries(custom))content=content.replaceAll(text,`<?php echo esc_html(get_theme_mod('${key}', '${fallback}')); ?>`);
+ if(i===0)content=content.replace('<div class="announcement"', "<?php if (get_theme_mod('karma_announcement_enabled', true)) : ?><div class=\"announcement\"").replace('<header class="site-header">','<?php endif; ?><header class="site-header">');
+ if(i===1) content=content.replace('class="hero-image" src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/hero-model.webp"','class="hero-image" src="<?php echo esc_url(get_theme_mod(\'karma_hero_image\', get_template_directory_uri() . \'/assets/hero-model.webp\')); ?>"');
+ await fs.writeFile(`release/karma-beauty/template-parts/${['site-header','home','site-footer'][i]}.php`,content);
+}
+await fs.mkdir('release/karma-demo-products',{recursive:true});
+await fs.copyFile('plugin/karma-demo-products.php','release/karma-demo-products/karma-demo-products.php');
+await fs.writeFile('release/karma-beauty/README.txt',await read('HOSTINGER-SETUP.md'));
+await fs.copyFile('QA.md','release/karma-beauty/QA.md');
+console.log('Built static preview in dist/ and WordPress packages in release/.');

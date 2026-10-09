@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": [
+    "first visit: correct first visible language, label and seam",
+    "saved Arabic: correct first visible language, label and seam",
+    "saved English: correct first visible language, label and seam",
+    "cookie fallback: correct first visible language, label and seam",
+    "unavailable storage: correct first visible language, label and seam",
+    "dismissal survives reload and language switch; focus preserved",
+    "compact 32px toggle and top seam at mobile sizes, both languages",
+    "owner preview flag removes announcement; packaged PHP has independent Customizer gate"
+  ]
+}

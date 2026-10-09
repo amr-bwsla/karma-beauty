@@ -1,0 +1,61 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "width": 390,
+      "lang": "en",
+      "heroHeight": 712.625,
+      "zoom": 1.09,
+      "overflow": false
+    },
+    {
+      "width": 1024,
+      "lang": "en",
+      "heroHeight": 465.625,
+      "zoom": 1.09,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "lang": "en",
+      "heroHeight": 468.625,
+      "zoom": 1.09,
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "lang": "en",
+      "heroHeight": 468.625,
+      "zoom": 1.09,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "lang": "ar",
+      "heroHeight": 739.0625,
+      "zoom": 1.09,
+      "overflow": false
+    },
+    {
+      "width": 1024,
+      "lang": "ar",
+      "heroHeight": 491.4375,
+      "zoom": 1.09,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "lang": "ar",
+      "heroHeight": 494.4375,
+      "zoom": 1.09,
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "lang": "ar",
+      "heroHeight": 494.4375,
+      "zoom": 1.09,
+      "overflow": false
+    }
+  ]
+}

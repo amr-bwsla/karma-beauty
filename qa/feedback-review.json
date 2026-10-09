@@ -1,0 +1,65 @@
+{
+  "viewports": [
+    {
+      "width": 320,
+      "overflow": false,
+      "heroHeight": 875.140625,
+      "ritualImageHeight": 213.328125,
+      "aboutHeight": 1036.40625,
+      "unnamedDialogs": []
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "heroHeight": 846.34375,
+      "ritualImageHeight": 260,
+      "aboutHeight": 947.625,
+      "unnamedDialogs": []
+    },
+    {
+      "width": 533,
+      "overflow": false,
+      "heroHeight": 846.34375,
+      "ritualImageHeight": 355.328125,
+      "aboutHeight": 888.4375,
+      "unnamedDialogs": []
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "heroHeight": 560,
+      "ritualImageHeight": 512,
+      "aboutHeight": 851.109375,
+      "unnamedDialogs": []
+    },
+    {
+      "width": 1001,
+      "overflow": false,
+      "heroHeight": 560,
+      "ritualImageHeight": 520,
+      "aboutHeight": 505.09375,
+      "unnamedDialogs": []
+    },
+    {
+      "width": 1440,
+      "overflow": false,
+      "heroHeight": 599.53125,
+      "ritualImageHeight": 520,
+      "aboutHeight": 520.625,
+      "unnamedDialogs": []
+    }
+  ],
+  "policies": {
+    "shipping": "تكلفة التوصيل داخل محافظة القاهرة 50 ج.م.، وباقي المحافظات 120 ج.م. اختاري المحافظة في السلة لعرض الإجمالي. لا يوجد حد للشحن المجاني حاليًا.",
+    "returns": "سيتم نشر سياسة الاستبدال والاسترجاع المعتمدة قبل إطلاق المتجر، بما يشمل المدد وحالة المنتجات المقبولة وطريقة التواصل. المنتجات الموجودة حاليًا افتراضية ولا يمكن شراؤها فعليًا.",
+    "privacy": "تحتفظ هذه المعاينة بالسلة والمفضلة واسم العضوية التجريبية والخصم داخل متصفحك فقط. لا تحفظ البريد المُدخل أو ترسله، ولا تجمع كلمات مرور أو بيانات دفع أو تنشئ حسابات حقيقية. قبل التشغيل الفعلي، سيتم نشر سياسة توضح معالجة بيانات الطلبات والعملاء."
+  },
+  "errors": [],
+  "failed": [],
+  "catalog": {
+    "count": 20,
+    "mode": "demo",
+    "productsWithIngredients": 0,
+    "productsWithDirections": 0
+  }
+}

@@ -1,0 +1,185 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "lang": "en",
+      "width": 390,
+      "time": 0,
+      "headroom": 19.695,
+      "chinBottom": 200.889,
+      "height": 292.5,
+      "overflow": false
+    },
+    {
+      "lang": "en",
+      "width": 390,
+      "time": 6000,
+      "headroom": 21.255000000000003,
+      "chinBottom": 216.80100000000002,
+      "height": 292.5,
+      "overflow": false
+    },
+    {
+      "lang": "en",
+      "width": 1024,
+      "time": 0,
+      "headroom": 25.856,
+      "chinBottom": 263.7312,
+      "height": 465.625,
+      "overflow": false
+    },
+    {
+      "lang": "en",
+      "width": 1024,
+      "time": 6000,
+      "headroom": 27.904000000000003,
+      "chinBottom": 284.62080000000003,
+      "height": 465.625,
+      "overflow": false
+    },
+    {
+      "lang": "en",
+      "width": 1440,
+      "time": 0,
+      "headroom": 37.774,
+      "chinBottom": 385.2948,
+      "height": 468.625,
+      "overflow": false
+    },
+    {
+      "lang": "en",
+      "width": 1440,
+      "time": 6000,
+      "headroom": 40.766,
+      "chinBottom": 415.81320000000005,
+      "height": 468.625,
+      "overflow": false
+    },
+    {
+      "lang": "en",
+      "width": 1920,
+      "time": 0,
+      "headroom": 37.875,
+      "chinBottom": 386.325,
+      "height": 468.625,
+      "overflow": false
+    },
+    {
+      "lang": "en",
+      "width": 1920,
+      "time": 6000,
+      "headroom": 40.875,
+      "chinBottom": 416.925,
+      "height": 468.625,
+      "overflow": false
+    },
+    {
+      "lang": "en",
+      "width": 2560,
+      "time": 0,
+      "headroom": 37.875,
+      "chinBottom": 386.325,
+      "height": 468.625,
+      "overflow": false
+    },
+    {
+      "lang": "en",
+      "width": 2560,
+      "time": 6000,
+      "headroom": 40.875,
+      "chinBottom": 416.925,
+      "height": 468.625,
+      "overflow": false
+    },
+    {
+      "lang": "ar",
+      "width": 390,
+      "time": 0,
+      "headroom": 19.695,
+      "chinBottom": 200.889,
+      "height": 292.5,
+      "overflow": false
+    },
+    {
+      "lang": "ar",
+      "width": 390,
+      "time": 6000,
+      "headroom": 21.255000000000003,
+      "chinBottom": 216.80100000000002,
+      "height": 292.5,
+      "overflow": false
+    },
+    {
+      "lang": "ar",
+      "width": 1024,
+      "time": 0,
+      "headroom": 25.856,
+      "chinBottom": 263.7312,
+      "height": 491.4375,
+      "overflow": false
+    },
+    {
+      "lang": "ar",
+      "width": 1024,
+      "time": 6000,
+      "headroom": 27.904000000000003,
+      "chinBottom": 284.62080000000003,
+      "height": 491.4375,
+      "overflow": false
+    },
+    {
+      "lang": "ar",
+      "width": 1440,
+      "time": 0,
+      "headroom": 37.774,
+      "chinBottom": 385.2948,
+      "height": 494.4375,
+      "overflow": false
+    },
+    {
+      "lang": "ar",
+      "width": 1440,
+      "time": 6000,
+      "headroom": 40.766,
+      "chinBottom": 415.81320000000005,
+      "height": 494.4375,
+      "overflow": false
+    },
+    {
+      "lang": "ar",
+      "width": 1920,
+      "time": 0,
+      "headroom": 39.9455,
+      "chinBottom": 407.44410000000005,
+      "height": 494.4375,
+      "overflow": false
+    },
+    {
+      "lang": "ar",
+      "width": 1920,
+      "time": 6000,
+      "headroom": 43.10950000000001,
+      "chinBottom": 439.71690000000007,
+      "height": 494.4375,
+      "overflow": false
+    },
+    {
+      "lang": "ar",
+      "width": 2560,
+      "time": 0,
+      "headroom": 39.9455,
+      "chinBottom": 407.44410000000005,
+      "height": 494.4375,
+      "overflow": false
+    },
+    {
+      "lang": "ar",
+      "width": 2560,
+      "time": 6000,
+      "headroom": 43.10950000000001,
+      "chinBottom": 439.71690000000007,
+      "height": 494.4375,
+      "overflow": false
+    }
+  ]
+}

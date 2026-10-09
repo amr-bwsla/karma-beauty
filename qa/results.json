@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "checks": [
+    "20 unique product images and hashes",
+    "compact product action buttons",
+    "20 products",
+    "category filters",
+    "price sorting",
+    "Arabic search",
+    "favorites",
+    "shade selection",
+    "cart quantities",
+    "cart persistence",
+    "demo checkout",
+    "empty search",
+    "mobile menu",
+    "real phone and WhatsApp link targets",
+    "missing email hidden",
+    "distinct hero and ritual images",
+    "continuous zoom changes scale",
+    "seamless offers ticker advances",
+    "readable footer signoff",
+    "hero badge, star and motion control removed",
+    "no horizontal overflow at 320/390/734/768/1440",
+    "images loaded",
+    "no JS exceptions",
+    "no failed HTTP responses"
+  ],
+  "errors": [],
+  "failed": []
+}

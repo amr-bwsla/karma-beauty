@@ -1,0 +1,275 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "lang": "en",
+      "width": 390,
+      "overflow": false,
+      "sections": [
+        {
+          "selector": ".hero",
+          "width": 390,
+          "left": 0
+        },
+        {
+          "selector": ".ritual",
+          "width": 390,
+          "left": 0
+        },
+        {
+          "selector": ".contact-section",
+          "width": 390,
+          "left": 0
+        },
+        {
+          "selector": ".site-footer",
+          "width": 390,
+          "left": 0
+        }
+      ]
+    },
+    {
+      "lang": "en",
+      "width": 1440,
+      "overflow": false,
+      "sections": [
+        {
+          "selector": ".hero",
+          "width": 1440,
+          "left": 0
+        },
+        {
+          "selector": ".ritual",
+          "width": 1440,
+          "left": 0
+        },
+        {
+          "selector": ".contact-section",
+          "width": 1440,
+          "left": 0
+        },
+        {
+          "selector": ".site-footer",
+          "width": 1440,
+          "left": 0
+        }
+      ]
+    },
+    {
+      "lang": "en",
+      "width": 1920,
+      "overflow": false,
+      "sections": [
+        {
+          "selector": ".hero",
+          "width": 1920,
+          "left": 0
+        },
+        {
+          "selector": ".ritual",
+          "width": 1920,
+          "left": 0
+        },
+        {
+          "selector": ".contact-section",
+          "width": 1920,
+          "left": 0
+        },
+        {
+          "selector": ".site-footer",
+          "width": 1920,
+          "left": 0
+        }
+      ]
+    },
+    {
+      "lang": "en",
+      "width": 3840,
+      "overflow": false,
+      "sections": [
+        {
+          "selector": ".hero",
+          "width": 1920,
+          "left": 960
+        },
+        {
+          "selector": ".ritual",
+          "width": 1920,
+          "left": 960
+        },
+        {
+          "selector": ".contact-section",
+          "width": 1920,
+          "left": 960
+        },
+        {
+          "selector": ".site-footer",
+          "width": 1920,
+          "left": 960
+        }
+      ]
+    },
+    {
+      "lang": "en",
+      "width": 5120,
+      "overflow": false,
+      "sections": [
+        {
+          "selector": ".hero",
+          "width": 1920,
+          "left": 1600
+        },
+        {
+          "selector": ".ritual",
+          "width": 1920,
+          "left": 1600
+        },
+        {
+          "selector": ".contact-section",
+          "width": 1920,
+          "left": 1600
+        },
+        {
+          "selector": ".site-footer",
+          "width": 1920,
+          "left": 1600
+        }
+      ]
+    },
+    {
+      "lang": "ar",
+      "width": 390,
+      "overflow": false,
+      "sections": [
+        {
+          "selector": ".hero",
+          "width": 390,
+          "left": 0
+        },
+        {
+          "selector": ".ritual",
+          "width": 390,
+          "left": 0
+        },
+        {
+          "selector": ".contact-section",
+          "width": 390,
+          "left": 0
+        },
+        {
+          "selector": ".site-footer",
+          "width": 390,
+          "left": 0
+        }
+      ]
+    },
+    {
+      "lang": "ar",
+      "width": 1440,
+      "overflow": false,
+      "sections": [
+        {
+          "selector": ".hero",
+          "width": 1440,
+          "left": 0
+        },
+        {
+          "selector": ".ritual",
+          "width": 1440,
+          "left": 0
+        },
+        {
+          "selector": ".contact-section",
+          "width": 1440,
+          "left": 0
+        },
+        {
+          "selector": ".site-footer",
+          "width": 1440,
+          "left": 0
+        }
+      ]
+    },
+    {
+      "lang": "ar",
+      "width": 1920,
+      "overflow": false,
+      "sections": [
+        {
+          "selector": ".hero",
+          "width": 1920,
+          "left": 0
+        },
+        {
+          "selector": ".ritual",
+          "width": 1920,
+          "left": 0
+        },
+        {
+          "selector": ".contact-section",
+          "width": 1920,
+          "left": 0
+        },
+        {
+          "selector": ".site-footer",
+          "width": 1920,
+          "left": 0
+        }
+      ]
+    },
+    {
+      "lang": "ar",
+      "width": 3840,
+      "overflow": false,
+      "sections": [
+        {
+          "selector": ".hero",
+          "width": 1920,
+          "left": 960
+        },
+        {
+          "selector": ".ritual",
+          "width": 1920,
+          "left": 960
+        },
+        {
+          "selector": ".contact-section",
+          "width": 1920,
+          "left": 960
+        },
+        {
+          "selector": ".site-footer",
+          "width": 1920,
+          "left": 960
+        }
+      ]
+    },
+    {
+      "lang": "ar",
+      "width": 5120,
+      "overflow": false,
+      "sections": [
+        {
+          "selector": ".hero",
+          "width": 1920,
+          "left": 1600
+        },
+        {
+          "selector": ".ritual",
+          "width": 1920,
+          "left": 1600
+        },
+        {
+          "selector": ".contact-section",
+          "width": 1920,
+          "left": 1600
+        },
+        {
+          "selector": ".site-footer",
+          "width": 1920,
+          "left": 1600
+        }
+      ]
+    }
+  ]
+}
