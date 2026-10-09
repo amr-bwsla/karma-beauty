@@ -7,8 +7,8 @@ body{font-size:16px;line-height:1.8}h1,h2,h3{font-weight:700}button,a{text-under
 
 /* Release 1.4: illustrated identity, luxury campaign and seamless offers. */
 .brand img{width:194px;height:auto;max-width:100%}.footer-brand img{width:205px;height:auto}
-.hero-art{isolation:isolate;background:#efd8df}
-.hero .hero-image{z-index:1;object-fit:cover;object-position:50% 30%!important;padding:0;animation:none!important;transform:none!important;transition:transform 1.6s ease-in-out;transform-origin:50% 0;will-change:auto}
+.hero-art{isolation:isolate;background:#efd8df;-webkit-touch-callout:none}
+.hero .hero-image{z-index:1;object-fit:cover;object-position:50% 30%!important;padding:0;animation:none!important;transform:none!important;transition:transform 1.6s ease-in-out;transform-origin:50% 0;will-change:auto;-webkit-touch-callout:none;-webkit-user-drag:none;user-select:none}
 .hero .hero-art.is-touching .hero-image{transform:scale(1.06)!important}
 @media(hover:hover) and (pointer:fine){
  .hero .hero-art:hover .hero-image{transform:scale(1.06)!important}

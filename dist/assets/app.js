@@ -123,6 +123,8 @@
  if(heroArt){
   let touchPointer=null;
   const resetHeroTouch=()=>{touchPointer=null;heroArt.classList.remove('is-touching');};
+  heroArt.addEventListener('contextmenu',e=>e.preventDefault());
+  heroArt.querySelectorAll('img').forEach(img=>{img.draggable=false;});
   heroArt.addEventListener('pointerdown',e=>{if(e.pointerType==='mouse'||!e.isPrimary)return;touchPointer=e.pointerId;heroArt.classList.add('is-touching');},{passive:true});
   for(const event of ['pointerup','pointercancel'])window.addEventListener(event,e=>{if(e.pointerId===touchPointer)resetHeroTouch();},{passive:true});
   window.addEventListener('blur',resetHeroTouch);
