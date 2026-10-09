@@ -60,6 +60,8 @@ await page.locator('[data-action="choose-cod"]').click();
 await expect(page.locator('input[value="cod"]')).toBeChecked();
 await expect(page.locator('.payment-coming')).toHaveCount(0);
 assert.equal((await page.locator('#cart-content').innerText()).includes('تجريب'),false);
+await page.locator('#delivery-address').fill('شارع النيل، عمارة 12، الدور 3، شقة 8، بجوار الصيدلية');
+await page.locator('#contact-phone').fill('01012345678');
 await page.locator('[data-action="checkout"]').click();
 await expect(page.locator('#info-content')).toContainText('الجيزة');
 await expect(page.locator('#info-content')).toContainText('٦٠٥');

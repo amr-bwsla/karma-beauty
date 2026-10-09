@@ -31,6 +31,8 @@ await expect(page.locator('#coupon-error')).toContainText('غير صحيح');
 await page.locator('#coupon-code').fill(' karma10 ');
 await page.locator('#coupon-form button').click();
 await expect(page.locator('[data-grand-total]')).toContainText('٤٨٦٫٥');
+await page.locator('#delivery-address').fill('شارع النيل، عمارة 12، الدور 3، شقة 8، بجوار الصيدلية');
+await page.locator('#contact-phone').fill('01012345678');
 await page.locator('[data-action="checkout"]').click();
 await expect(page.locator('#info-content')).toContainText('٤٨٦٫٥');
 await expect(page.locator('#info-content')).toContainText('عيّنة عناية');

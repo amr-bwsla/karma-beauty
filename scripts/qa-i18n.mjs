@@ -50,6 +50,8 @@ for(const method of ['visa','mastercard','fawry','paymob']){
  await page.locator('input[name="payment"][value="'+method+'"]').check();await audit();
 }
 await page.locator('[data-action="choose-cod"]').click();
+await page.locator('#delivery-address').fill('12 Nile Street, building 4, floor 2, apartment 6');
+await page.locator('#contact-phone').fill('01012345678');
 await page.locator('[data-action="checkout"]').click();await audit();
 await page.keyboard.press('Escape');
 await page.locator('[data-action="account"]').first().click();await audit();

@@ -214,3 +214,10 @@ html[lang="ar"] .hero-art:has([data-hero-variant="model"]):before{transform:scal
  .hero .welcome-perk>i{padding:8px}
  .hero .welcome-perk small{margin-top:4px}
 }
+.delivery-choice textarea,.delivery-choice input[type="tel"]{display:block;width:100%;box-sizing:border-box;margin-top:0;padding:10px 12px;border:1px solid #e4cbd7;border-radius:7px;background:#fff;color:#40323b;font:15px/1.7 'Tajawal',sans-serif}
+.delivery-choice textarea{min-height:84px;resize:vertical}
+.delivery-choice label[for="delivery-address"],.delivery-choice label[for="contact-phone"]{margin-top:14px}
+#address-error,#phone-error{color:#ab285f;font-size:13px;margin-top:5px}
+.checkout-detail{display:grid;gap:4px}
+.checkout-detail p{margin:0;white-space:pre-wrap;line-height:1.7}
+html[lang="en"] .delivery-choice textarea,html[lang="en"] .delivery-choice input[type="tel"]{font-family:'Manrope',sans-serif;font-size:14px}

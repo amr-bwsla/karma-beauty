@@ -48,6 +48,8 @@ assert.equal(await page.locator('.header-tools [data-cart-count]').innerText(),'
 await page.locator('[data-action="cart"]').click();
 await page.screenshot({path:'qa/cart.png'});
 await page.locator('#shipping-governorate').selectOption('القاهرة');
+await page.locator('#delivery-address').fill('شارع النيل، عمارة 12، الدور 3، شقة 8، بجوار الصيدلية');
+await page.locator('#contact-phone').fill('01012345678');
 await page.locator('[data-action="checkout"]').click();
 assert.match(await page.locator('#info-content').innerText(),/مفيش طلب اتبعت/);
 await page.locator('#info-dialog [data-close]').click();
